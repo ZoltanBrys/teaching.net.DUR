@@ -40,9 +40,9 @@ gdat <- test_data <-
 
 ggplot(gdat, aes(id)) + 
   geom_point(aes(y = survey, shapes = 15, size = 3,  colour = "survey"),  show.legend = F ,) + 
-  geom_point(aes(y = simitott, shapes = 16, size = 3,  colour = "simitott"),  show.legend = F,) +
-  xlab("fokszám") + 
-  ylab("előfordulás") +
+  geom_point(aes(y = simitott, shapes = 16, size = 3,  colour = "smoothened"),  show.legend = F,) +
+  xlab("degree") + 
+  ylab("n") +
   theme_minimal(base_size = 16) +
   geom_abline(intercept=130, slope=-8)
 
